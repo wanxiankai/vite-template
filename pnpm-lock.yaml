@@ -12,6 +12,8 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-react: ^7.30.1
   eslint-plugin-react-hooks: ^4.6.0
+  postcss: ^8.4.16
+  postcss-preset-env: ^7.7.2
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -40,6 +42,8 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_g4fztgbwjyq2fvmcscny2sj6fy
   eslint-plugin-react: 7.30.1_eslint@8.20.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
+  postcss: registry.npmmirror.com/postcss/8.4.16
+  postcss-preset-env: registry.npmmirror.com/postcss-preset-env/7.7.2_postcss@8.4.16
   prettier: 2.7.1
   stylelint: 14.9.1
   stylelint-config-prettier: 9.0.3_stylelint@14.9.1
@@ -318,14 +322,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@csstools/selector-specificity/2.0.2_444rcjjorr3kpoqtvoodsr46pu:
+  /@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi:
     resolution: {integrity: sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==}
     engines: {node: ^12 || ^14 || >=16}
     peerDependencies:
       postcss: ^8.2
       postcss-selector-parser: ^6.0.10
     dependencies:
-      postcss: 8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
       postcss-selector-parser: 6.0.10
     dev: true
 
@@ -991,212 +995,32 @@ packages:
       is-symbol: 1.0.4
     dev: true
 
-  /esbuild-android-64/0.14.50:
-    resolution: {integrity: sha512-H7iUEm7gUJHzidsBlFPGF6FTExazcgXL/46xxLo6i6bMtPim6ZmXyTccS8yOMpy6HAC6dPZ/JCQqrkkin69n6Q==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-android-arm64/0.14.50:
-    resolution: {integrity: sha512-NFaoqEwa+OYfoYVpQWDMdKII7wZZkAjtJFo1WdnBeCYlYikvUhTnf2aPwPu5qEAw/ie1NYK0yn3cafwP+kP+OQ==}
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-darwin-64/0.14.50:
-    resolution: {integrity: sha512-gDQsCvGnZiJv9cfdO48QqxkRV8oKAXgR2CGp7TdIpccwFdJMHf8hyIJhMW/05b/HJjET/26Us27Jx91BFfEVSA==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-darwin-arm64/0.14.50:
-    resolution: {integrity: sha512-36nNs5OjKIb/Q50Sgp8+rYW/PqirRiFN0NFc9hEvgPzNJxeJedktXwzfJSln4EcRFRh5Vz4IlqFRScp+aiBBzA==}
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-freebsd-64/0.14.50:
-    resolution: {integrity: sha512-/1pHHCUem8e/R86/uR+4v5diI2CtBdiWKiqGuPa9b/0x3Nwdh5AOH7lj+8823C6uX1e0ufwkSLkS+aFZiBCWxA==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-freebsd-arm64/0.14.50:
-    resolution: {integrity: sha512-iKwUVMQztnPZe5pUYHdMkRc9aSpvoV1mkuHlCoPtxZA3V+Kg/ptpzkcSY+fKd0kuom+l6Rc93k0UPVkP7xoqrw==}
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-32/0.14.50:
-    resolution: {integrity: sha512-sWUwvf3uz7dFOpLzYuih+WQ7dRycrBWHCdoXJ4I4XdMxEHCECd8b7a9N9u7FzT6XR2gHPk9EzvchQUtiEMRwqw==}
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-64/0.14.50:
-    resolution: {integrity: sha512-u0PQxPhaeI629t4Y3EEcQ0wmWG+tC/LpP2K7yDFvwuPq0jSQ8SIN+ARNYfRjGW15O2we3XJvklbGV0wRuUCPig==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-arm/0.14.50:
-    resolution: {integrity: sha512-VALZq13bhmFJYFE/mLEb+9A0w5vo8z+YDVOWeaf9vOTrSC31RohRIwtxXBnVJ7YKLYfEMzcgFYf+OFln3Y0cWg==}
-    engines: {node: '>=12'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-arm64/0.14.50:
-    resolution: {integrity: sha512-ZyfoNgsTftD7Rp5S7La5auomKdNeB3Ck+kSKXC4pp96VnHyYGjHHXWIlcbH8i+efRn9brszo1/Thl1qn8RqmhQ==}
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-mips64le/0.14.50:
-    resolution: {integrity: sha512-ygo31Vxn/WrmjKCHkBoutOlFG5yM9J2UhzHb0oWD9O61dGg+Hzjz9hjf5cmM7FBhAzdpOdEWHIrVOg2YAi6rTw==}
-    engines: {node: '>=12'}
-    cpu: [mips64el]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-ppc64le/0.14.50:
-    resolution: {integrity: sha512-xWCKU5UaiTUT6Wz/O7GKP9KWdfbsb7vhfgQzRfX4ahh5NZV4ozZ4+SdzYG8WxetsLy84UzLX3Pi++xpVn1OkFQ==}
-    engines: {node: '>=12'}
-    cpu: [ppc64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-riscv64/0.14.50:
-    resolution: {integrity: sha512-0+dsneSEihZTopoO9B6Z6K4j3uI7EdxBP7YSF5rTwUgCID+wHD3vM1gGT0m+pjCW+NOacU9kH/WE9N686FHAJg==}
-    engines: {node: '>=12'}
-    cpu: [riscv64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-linux-s390x/0.14.50:
-    resolution: {integrity: sha512-tVjqcu8o0P9H4StwbIhL1sQYm5mWATlodKB6dpEZFkcyTI8kfIGWiWcrGmkNGH2i1kBUOsdlBafPxR3nzp3TDA==}
-    engines: {node: '>=12'}
-    cpu: [s390x]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-netbsd-64/0.14.50:
-    resolution: {integrity: sha512-0R/glfqAQ2q6MHDf7YJw/TulibugjizBxyPvZIcorH0Mb7vSimdHy0XF5uCba5CKt+r4wjax1mvO9lZ4jiAhEg==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [netbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-openbsd-64/0.14.50:
-    resolution: {integrity: sha512-7PAtmrR5mDOFubXIkuxYQ4bdNS6XCK8AIIHUiZxq1kL8cFIH5731jPcXQ4JNy/wbj1C9sZ8rzD8BIM80Tqk29w==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [openbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-sunos-64/0.14.50:
-    resolution: {integrity: sha512-gBxNY/wyptvD7PkHIYcq7se6SQEXcSC8Y7mE0FJB+CGgssEWf6vBPfTTZ2b6BWKnmaP6P6qb7s/KRIV5T2PxsQ==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [sunos]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-windows-32/0.14.50:
-    resolution: {integrity: sha512-MOOe6J9cqe/iW1qbIVYSAqzJFh0p2LBLhVUIWdMVnNUNjvg2/4QNX4oT4IzgDeldU+Bym9/Tn6+DxvUHJXL5Zw==}
-    engines: {node: '>=12'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-windows-64/0.14.50:
-    resolution: {integrity: sha512-r/qE5Ex3w1jjGv/JlpPoWB365ldkppUlnizhMxJgojp907ZF1PgLTuW207kgzZcSCXyquL9qJkMsY+MRtaZ5yQ==}
-    engines: {node: '>=12'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /esbuild-windows-arm64/0.14.50:
-    resolution: {integrity: sha512-EMS4lQnsIe12ZyAinOINx7eq2mjpDdhGZZWDwPZE/yUTN9cnc2Ze/xUTYIAyaJqrqQda3LnDpADKpvLvol6ENQ==}
-    engines: {node: '>=12'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /esbuild/0.14.50:
     resolution: {integrity: sha512-SbC3k35Ih2IC6trhbMYW7hYeGdjPKf9atTKwBUHqMCYFZZ9z8zhuvfnZihsnJypl74FjiAKjBRqFkBkAd0rS/w==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      esbuild-android-64: 0.14.50
-      esbuild-android-arm64: 0.14.50
-      esbuild-darwin-64: 0.14.50
-      esbuild-darwin-arm64: 0.14.50
-      esbuild-freebsd-64: 0.14.50
-      esbuild-freebsd-arm64: 0.14.50
-      esbuild-linux-32: 0.14.50
-      esbuild-linux-64: 0.14.50
-      esbuild-linux-arm: 0.14.50
-      esbuild-linux-arm64: 0.14.50
-      esbuild-linux-mips64le: 0.14.50
-      esbuild-linux-ppc64le: 0.14.50
-      esbuild-linux-riscv64: 0.14.50
-      esbuild-linux-s390x: 0.14.50
-      esbuild-netbsd-64: 0.14.50
-      esbuild-openbsd-64: 0.14.50
-      esbuild-sunos-64: 0.14.50
-      esbuild-windows-32: 0.14.50
-      esbuild-windows-64: 0.14.50
-      esbuild-windows-arm64: 0.14.50
+      esbuild-android-64: registry.npmmirror.com/esbuild-android-64/0.14.50
+      esbuild-android-arm64: registry.npmmirror.com/esbuild-android-arm64/0.14.50
+      esbuild-darwin-64: registry.npmmirror.com/esbuild-darwin-64/0.14.50
+      esbuild-darwin-arm64: registry.npmmirror.com/esbuild-darwin-arm64/0.14.50
+      esbuild-freebsd-64: registry.npmmirror.com/esbuild-freebsd-64/0.14.50
+      esbuild-freebsd-arm64: registry.npmmirror.com/esbuild-freebsd-arm64/0.14.50
+      esbuild-linux-32: registry.npmmirror.com/esbuild-linux-32/0.14.50
+      esbuild-linux-64: registry.npmmirror.com/esbuild-linux-64/0.14.50
+      esbuild-linux-arm: registry.npmmirror.com/esbuild-linux-arm/0.14.50
+      esbuild-linux-arm64: registry.npmmirror.com/esbuild-linux-arm64/0.14.50
+      esbuild-linux-mips64le: registry.npmmirror.com/esbuild-linux-mips64le/0.14.50
+      esbuild-linux-ppc64le: registry.npmmirror.com/esbuild-linux-ppc64le/0.14.50
+      esbuild-linux-riscv64: registry.npmmirror.com/esbuild-linux-riscv64/0.14.50
+      esbuild-linux-s390x: registry.npmmirror.com/esbuild-linux-s390x/0.14.50
+      esbuild-netbsd-64: registry.npmmirror.com/esbuild-netbsd-64/0.14.50
+      esbuild-openbsd-64: registry.npmmirror.com/esbuild-openbsd-64/0.14.50
+      esbuild-sunos-64: registry.npmmirror.com/esbuild-sunos-64/0.14.50
+      esbuild-windows-32: registry.npmmirror.com/esbuild-windows-32/0.14.50
+      esbuild-windows-64: registry.npmmirror.com/esbuild-windows-64/0.14.50
+      esbuild-windows-arm64: registry.npmmirror.com/esbuild-windows-arm64/0.14.50
     dev: true
 
   /escalade/3.1.1:
@@ -1472,14 +1296,6 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
-
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
@@ -2014,12 +1830,6 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /nanoid/3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -2205,13 +2015,13 @@ packages:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
     dev: true
 
-  /postcss-safe-parser/6.0.0_postcss@8.4.14:
+  /postcss-safe-parser/6.0.0_postcss@8.4.16:
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
     dev: true
 
   /postcss-selector-parser/6.0.10:
@@ -2222,25 +2032,16 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-sorting/7.0.1_postcss@8.4.14:
+  /postcss-sorting/7.0.1_postcss@8.4.16:
     resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
     peerDependencies:
       postcss: ^8.3.9
     dependencies:
-      postcss: 8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
     dev: true
 
   /postcss-value-parser/4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-    dev: true
-
-  /postcss/8.4.14:
-    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.4
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
     dev: true
 
   /prelude-ls/1.2.1:
@@ -2458,7 +2259,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
   /run-parallel/1.2.0:
@@ -2531,11 +2332,6 @@ packages:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
-    dev: true
-
-  /source-map-js/1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /sourcemap-codec/1.4.8:
@@ -2666,8 +2462,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      postcss: 8.4.14
-      postcss-sorting: 7.0.1_postcss@8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-sorting: 7.0.1_postcss@8.4.16
       stylelint: 14.9.1
     dev: true
 
@@ -2676,7 +2472,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@csstools/selector-specificity': 2.0.2_444rcjjorr3kpoqtvoodsr46pu
+      '@csstools/selector-specificity': 2.0.2_pnx64jze6bptzcedy5bidi3zdi
       balanced-match: 2.0.0
       colord: 2.9.2
       cosmiconfig: 7.0.1
@@ -2701,10 +2497,10 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0_postcss@8.4.14
+      postcss-safe-parser: 6.0.0_postcss@8.4.16
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
@@ -2847,7 +2643,7 @@ packages:
     dependencies:
       browserslist: 4.21.3
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: registry.npmmirror.com/picocolors/1.0.0
     dev: true
 
   /uri-js/4.4.1:
@@ -2899,11 +2695,11 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.14.50
-      postcss: 8.4.14
+      postcss: registry.npmmirror.com/postcss/8.4.16
       resolve: 1.22.1
       rollup: 2.77.2
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
   /which-boxed-primitive/1.0.2:
@@ -2960,4 +2756,1010 @@ packages:
   /yargs-parser/20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-cascade-layers/1.0.5_postcss@8.4.16:
+    resolution: {integrity: sha512-Id/9wBT7FkgFzdEpiEWrsVd4ltDxN0rI0QS0SChbeQiSuux3z21SJCRLu6h2cvCEUmaRi+VD0mHFj+GJD4GFnw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-cascade-layers/-/postcss-cascade-layers-1.0.5.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-cascade-layers/1.0.5
+    name: '@csstools/postcss-cascade-layers'
+    version: 1.0.5
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/selector-specificity': registry.npmmirror.com/@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-color-function/1.1.1_postcss@8.4.16:
+    resolution: {integrity: sha512-Bc0f62WmHdtRDjf5f3e2STwRAl89N2CLb+9iAwzrv4L2hncrbDwnQD9PCq0gtAt7pOI2leIV08HIBUd4jxD8cw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-color-function/-/postcss-color-function-1.1.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-color-function/1.1.1
+    name: '@csstools/postcss-color-function'
+    version: 1.1.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-font-format-keywords/1.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-ZgrlzuUAjXIOc2JueK0X5sZDjCtgimVp/O5CEqTcs5ShWBa6smhWYbS0x5cVc/+rycTDbjjzoP0KTDnUneZGOg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-font-format-keywords/-/postcss-font-format-keywords-1.0.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-font-format-keywords/1.0.1
+    name: '@csstools/postcss-font-format-keywords'
+    version: 1.0.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-hwb-function/1.0.2_postcss@8.4.16:
+    resolution: {integrity: sha512-YHdEru4o3Rsbjmu6vHy4UKOXZD+Rn2zmkAmLRfPet6+Jz4Ojw8cbWxe1n42VaXQhD3CQUXXTooIy8OkVbUcL+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-hwb-function/-/postcss-hwb-function-1.0.2.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-hwb-function/1.0.2
+    name: '@csstools/postcss-hwb-function'
+    version: 1.0.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-ic-unit/1.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-Ot1rcwRAaRHNKC9tAqoqNZhjdYBzKk1POgWfhN4uCOE47ebGcLRqXjKkApVDpjifL6u2/55ekkpnFcp+s/OZUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-ic-unit/-/postcss-ic-unit-1.0.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-ic-unit/1.0.1
+    name: '@csstools/postcss-ic-unit'
+    version: 1.0.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-is-pseudo-class/2.0.7_postcss@8.4.16:
+    resolution: {integrity: sha512-7JPeVVZHd+jxYdULl87lvjgvWldYu+Bc62s9vD/ED6/QTGjy0jy0US/f6BG53sVMTBJ1lzKZFpYmofBN9eaRiA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-is-pseudo-class/-/postcss-is-pseudo-class-2.0.7.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-is-pseudo-class/2.0.7
+    name: '@csstools/postcss-is-pseudo-class'
+    version: 2.0.7
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/selector-specificity': registry.npmmirror.com/@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-normalize-display-values/1.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-jcOanIbv55OFKQ3sYeFD/T0Ti7AMXc9nM1hZWu8m/2722gOTxFg7xYu4RDLJLeZmPUVQlGzo4jhzvTUq3x4ZUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-normalize-display-values/-/postcss-normalize-display-values-1.0.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-normalize-display-values/1.0.1
+    name: '@csstools/postcss-normalize-display-values'
+    version: 1.0.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-oklab-function/1.1.1_postcss@8.4.16:
+    resolution: {integrity: sha512-nJpJgsdA3dA9y5pgyb/UfEzE7W5Ka7u0CX0/HIMVBNWzWemdcTH3XwANECU6anWv/ao4vVNLTMxhiPNZsTK6iA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-oklab-function/-/postcss-oklab-function-1.1.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-oklab-function/1.1.1
+    name: '@csstools/postcss-oklab-function'
+    version: 1.1.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16:
+    resolution: {integrity: sha512-ASA9W1aIy5ygskZYuWams4BzafD12ULvSypmaLJT2jvQ8G0M3I8PRQhC0h7mG0Z3LI05+agZjqSR9+K9yaQQjA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/-/postcss-progressive-custom-properties-1.3.0.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0
+    name: '@csstools/postcss-progressive-custom-properties'
+    version: 1.3.0
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.3
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-stepped-value-functions/1.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-dz0LNoo3ijpTOQqEJLY8nyaapl6umbmDcgj4AD0lgVQ572b2eqA1iGZYTTWhrcrHztWDDRAX2DGYyw2VBjvCvQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-stepped-value-functions/-/postcss-stepped-value-functions-1.0.1.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-stepped-value-functions/1.0.1
+    name: '@csstools/postcss-stepped-value-functions'
+    version: 1.0.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-trigonometric-functions/1.0.2_postcss@8.4.16:
+    resolution: {integrity: sha512-woKaLO///4bb+zZC2s80l+7cm07M7268MsyG3M0ActXXEFi6SuhvriQYcb58iiKGbjwwIU7n45iRLEHypB47Og==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-trigonometric-functions/-/postcss-trigonometric-functions-1.0.2.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-trigonometric-functions/1.0.2
+    name: '@csstools/postcss-trigonometric-functions'
+    version: 1.0.2
+    engines: {node: ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-unset-value/1.0.2_postcss@8.4.16:
+    resolution: {integrity: sha512-c8J4roPBILnelAsdLr4XOAR/GsTm0GJi4XpcfvoWk3U6KiTCqiFYc63KhRMQQX35jYMp4Ao8Ij9+IZRgMfJp1g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-unset-value/-/postcss-unset-value-1.0.2.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-unset-value/1.0.2
+    name: '@csstools/postcss-unset-value'
+    version: 1.0.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi:
+    resolution: {integrity: sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz}
+    id: registry.npmmirror.com/@csstools/selector-specificity/2.0.2
+    name: '@csstools/selector-specificity'
+    version: 2.0.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+      postcss-selector-parser: ^6.0.10
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/autoprefixer/10.4.8_postcss@8.4.16:
+    resolution: {integrity: sha512-75Jr6Q/XpTqEf6D2ltS5uMewJIx5irCU1oBYJrWjFenq/m12WRRrz6g15L1EIoYvPLXTbEry7rDOwrcYNj77xw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/autoprefixer/-/autoprefixer-10.4.8.tgz}
+    id: registry.npmmirror.com/autoprefixer/10.4.8
+    name: autoprefixer
+    version: 10.4.8
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      browserslist: registry.npmmirror.com/browserslist/4.21.3
+      caniuse-lite: registry.npmmirror.com/caniuse-lite/1.0.30001373
+      fraction.js: registry.npmmirror.com/fraction.js/4.2.0
+      normalize-range: registry.npmmirror.com/normalize-range/0.1.2
+      picocolors: registry.npmmirror.com/picocolors/1.0.0
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/browserslist/4.21.3:
+    resolution: {integrity: sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/browserslist/-/browserslist-4.21.3.tgz}
+    name: browserslist
+    version: 4.21.3
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+    dependencies:
+      caniuse-lite: registry.npmmirror.com/caniuse-lite/1.0.30001373
+      electron-to-chromium: registry.npmmirror.com/electron-to-chromium/1.4.204
+      node-releases: registry.npmmirror.com/node-releases/2.0.6
+      update-browserslist-db: registry.npmmirror.com/update-browserslist-db/1.0.5_browserslist@4.21.3
+    dev: true
+
+  registry.npmmirror.com/caniuse-lite/1.0.30001373:
+    resolution: {integrity: sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001373.tgz}
+    name: caniuse-lite
+    version: 1.0.30001373
+    dev: true
+
+  registry.npmmirror.com/css-blank-pseudo/3.0.3_postcss@8.4.16:
+    resolution: {integrity: sha512-VS90XWtsHGqoM0t4KpH053c4ehxZ2E6HtGI7x68YFV0pTo/QmkV/YFA+NnlvK8guxZVNWGQhVNJGC39Q8XF4OQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-blank-pseudo/-/css-blank-pseudo-3.0.3.tgz}
+    id: registry.npmmirror.com/css-blank-pseudo/3.0.3
+    name: css-blank-pseudo
+    version: 3.0.3
+    engines: {node: ^12 || ^14 || >=16}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/css-has-pseudo/3.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-Vse0xpR1K9MNlp2j5w1pgWIJtm1a8qS0JwS9goFYcImjlHEmywP9VUF05aGBXzGpDJF86QXk4L0ypBmwPhGArw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-has-pseudo/-/css-has-pseudo-3.0.4.tgz}
+    id: registry.npmmirror.com/css-has-pseudo/3.0.4
+    name: css-has-pseudo
+    version: 3.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/css-prefers-color-scheme/6.0.3_postcss@8.4.16:
+    resolution: {integrity: sha512-4BqMbZksRkJQx2zAjrokiGMd07RqOa2IxIrrN10lyBe9xhn9DEvjUK79J6jkeiv9D9hQFXKb6g1jwU62jziJZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-prefers-color-scheme/-/css-prefers-color-scheme-6.0.3.tgz}
+    id: registry.npmmirror.com/css-prefers-color-scheme/6.0.3
+    name: css-prefers-color-scheme
+    version: 6.0.3
+    engines: {node: ^12 || ^14 || >=16}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/cssdb/6.6.3:
+    resolution: {integrity: sha512-7GDvDSmE+20+WcSMhP17Q1EVWUrLlbxxpMDqG731n8P99JhnQZHR9YvtjPvEHfjFUjvQJvdpKCjlKOX+xe4UVA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cssdb/-/cssdb-6.6.3.tgz}
+    name: cssdb
+    version: 6.6.3
+    dev: true
+
+  registry.npmmirror.com/cssesc/3.0.0:
+    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz}
+    name: cssesc
+    version: 3.0.0
+    engines: {node: '>=4'}
+    hasBin: true
+    dev: true
+
+  registry.npmmirror.com/electron-to-chromium/1.4.204:
+    resolution: {integrity: sha512-5Ojjtw9/c9HCXtMVE6SXVSHSNjmbFOXpKprl6mY/5moLSxLeWatuYA7KTD+RzJMxLRH6yNNQrqGz9p6IoNBMgw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.204.tgz}
+    name: electron-to-chromium
+    version: 1.4.204
+    dev: true
+
+  registry.npmmirror.com/esbuild-android-64/0.14.50:
+    resolution: {integrity: sha512-H7iUEm7gUJHzidsBlFPGF6FTExazcgXL/46xxLo6i6bMtPim6ZmXyTccS8yOMpy6HAC6dPZ/JCQqrkkin69n6Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-android-64/-/esbuild-android-64-0.14.50.tgz}
+    name: esbuild-android-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-android-arm64/0.14.50:
+    resolution: {integrity: sha512-NFaoqEwa+OYfoYVpQWDMdKII7wZZkAjtJFo1WdnBeCYlYikvUhTnf2aPwPu5qEAw/ie1NYK0yn3cafwP+kP+OQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-android-arm64/-/esbuild-android-arm64-0.14.50.tgz}
+    name: esbuild-android-arm64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-darwin-64/0.14.50:
+    resolution: {integrity: sha512-gDQsCvGnZiJv9cfdO48QqxkRV8oKAXgR2CGp7TdIpccwFdJMHf8hyIJhMW/05b/HJjET/26Us27Jx91BFfEVSA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.50.tgz}
+    name: esbuild-darwin-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-darwin-arm64/0.14.50:
+    resolution: {integrity: sha512-36nNs5OjKIb/Q50Sgp8+rYW/PqirRiFN0NFc9hEvgPzNJxeJedktXwzfJSln4EcRFRh5Vz4IlqFRScp+aiBBzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.50.tgz}
+    name: esbuild-darwin-arm64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-freebsd-64/0.14.50:
+    resolution: {integrity: sha512-/1pHHCUem8e/R86/uR+4v5diI2CtBdiWKiqGuPa9b/0x3Nwdh5AOH7lj+8823C6uX1e0ufwkSLkS+aFZiBCWxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.50.tgz}
+    name: esbuild-freebsd-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-freebsd-arm64/0.14.50:
+    resolution: {integrity: sha512-iKwUVMQztnPZe5pUYHdMkRc9aSpvoV1mkuHlCoPtxZA3V+Kg/ptpzkcSY+fKd0kuom+l6Rc93k0UPVkP7xoqrw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.50.tgz}
+    name: esbuild-freebsd-arm64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-32/0.14.50:
+    resolution: {integrity: sha512-sWUwvf3uz7dFOpLzYuih+WQ7dRycrBWHCdoXJ4I4XdMxEHCECd8b7a9N9u7FzT6XR2gHPk9EzvchQUtiEMRwqw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-32/-/esbuild-linux-32-0.14.50.tgz}
+    name: esbuild-linux-32
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-64/0.14.50:
+    resolution: {integrity: sha512-u0PQxPhaeI629t4Y3EEcQ0wmWG+tC/LpP2K7yDFvwuPq0jSQ8SIN+ARNYfRjGW15O2we3XJvklbGV0wRuUCPig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-64/-/esbuild-linux-64-0.14.50.tgz}
+    name: esbuild-linux-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-arm/0.14.50:
+    resolution: {integrity: sha512-VALZq13bhmFJYFE/mLEb+9A0w5vo8z+YDVOWeaf9vOTrSC31RohRIwtxXBnVJ7YKLYfEMzcgFYf+OFln3Y0cWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm/-/esbuild-linux-arm-0.14.50.tgz}
+    name: esbuild-linux-arm
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-arm64/0.14.50:
+    resolution: {integrity: sha512-ZyfoNgsTftD7Rp5S7La5auomKdNeB3Ck+kSKXC4pp96VnHyYGjHHXWIlcbH8i+efRn9brszo1/Thl1qn8RqmhQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.50.tgz}
+    name: esbuild-linux-arm64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-mips64le/0.14.50:
+    resolution: {integrity: sha512-ygo31Vxn/WrmjKCHkBoutOlFG5yM9J2UhzHb0oWD9O61dGg+Hzjz9hjf5cmM7FBhAzdpOdEWHIrVOg2YAi6rTw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.50.tgz}
+    name: esbuild-linux-mips64le
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-ppc64le/0.14.50:
+    resolution: {integrity: sha512-xWCKU5UaiTUT6Wz/O7GKP9KWdfbsb7vhfgQzRfX4ahh5NZV4ozZ4+SdzYG8WxetsLy84UzLX3Pi++xpVn1OkFQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.50.tgz}
+    name: esbuild-linux-ppc64le
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-riscv64/0.14.50:
+    resolution: {integrity: sha512-0+dsneSEihZTopoO9B6Z6K4j3uI7EdxBP7YSF5rTwUgCID+wHD3vM1gGT0m+pjCW+NOacU9kH/WE9N686FHAJg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.14.50.tgz}
+    name: esbuild-linux-riscv64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-linux-s390x/0.14.50:
+    resolution: {integrity: sha512-tVjqcu8o0P9H4StwbIhL1sQYm5mWATlodKB6dpEZFkcyTI8kfIGWiWcrGmkNGH2i1kBUOsdlBafPxR3nzp3TDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-s390x/-/esbuild-linux-s390x-0.14.50.tgz}
+    name: esbuild-linux-s390x
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-netbsd-64/0.14.50:
+    resolution: {integrity: sha512-0R/glfqAQ2q6MHDf7YJw/TulibugjizBxyPvZIcorH0Mb7vSimdHy0XF5uCba5CKt+r4wjax1mvO9lZ4jiAhEg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.50.tgz}
+    name: esbuild-netbsd-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-openbsd-64/0.14.50:
+    resolution: {integrity: sha512-7PAtmrR5mDOFubXIkuxYQ4bdNS6XCK8AIIHUiZxq1kL8cFIH5731jPcXQ4JNy/wbj1C9sZ8rzD8BIM80Tqk29w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.50.tgz}
+    name: esbuild-openbsd-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-sunos-64/0.14.50:
+    resolution: {integrity: sha512-gBxNY/wyptvD7PkHIYcq7se6SQEXcSC8Y7mE0FJB+CGgssEWf6vBPfTTZ2b6BWKnmaP6P6qb7s/KRIV5T2PxsQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.50.tgz}
+    name: esbuild-sunos-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-windows-32/0.14.50:
+    resolution: {integrity: sha512-MOOe6J9cqe/iW1qbIVYSAqzJFh0p2LBLhVUIWdMVnNUNjvg2/4QNX4oT4IzgDeldU+Bym9/Tn6+DxvUHJXL5Zw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-32/-/esbuild-windows-32-0.14.50.tgz}
+    name: esbuild-windows-32
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-windows-64/0.14.50:
+    resolution: {integrity: sha512-r/qE5Ex3w1jjGv/JlpPoWB365ldkppUlnizhMxJgojp907ZF1PgLTuW207kgzZcSCXyquL9qJkMsY+MRtaZ5yQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-64/-/esbuild-windows-64-0.14.50.tgz}
+    name: esbuild-windows-64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/esbuild-windows-arm64/0.14.50:
+    resolution: {integrity: sha512-EMS4lQnsIe12ZyAinOINx7eq2mjpDdhGZZWDwPZE/yUTN9cnc2Ze/xUTYIAyaJqrqQda3LnDpADKpvLvol6ENQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.50.tgz}
+    name: esbuild-windows-arm64
+    version: 0.14.50
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/escalade/3.1.1:
+    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/escalade/-/escalade-3.1.1.tgz}
+    name: escalade
+    version: 3.1.1
+    engines: {node: '>=6'}
+    dev: true
+
+  registry.npmmirror.com/fraction.js/4.2.0:
+    resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fraction.js/-/fraction.js-4.2.0.tgz}
+    name: fraction.js
+    version: 4.2.0
+    dev: true
+
+  registry.npmmirror.com/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nanoid/-/nanoid-3.3.4.tgz}
+    name: nanoid
+    version: 3.3.4
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
+  registry.npmmirror.com/node-releases/2.0.6:
+    resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-releases/-/node-releases-2.0.6.tgz}
+    name: node-releases
+    version: 2.0.6
+    dev: true
+
+  registry.npmmirror.com/normalize-range/0.1.2:
+    resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/normalize-range/-/normalize-range-0.1.2.tgz}
+    name: normalize-range
+    version: 0.1.2
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  registry.npmmirror.com/picocolors/1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
+    name: picocolors
+    version: 1.0.0
+    dev: true
+
+  registry.npmmirror.com/postcss-attribute-case-insensitive/5.0.2_postcss@8.4.16:
+    resolution: {integrity: sha512-XIidXV8fDr0kKt28vqki84fRK8VW8eTuIa4PChv2MqKuT6C9UjmSKzen6KaWhWEoYvwxFCa7n/tC1SZ3tyq4SQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-5.0.2.tgz}
+    id: registry.npmmirror.com/postcss-attribute-case-insensitive/5.0.2
+    name: postcss-attribute-case-insensitive
+    version: 5.0.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-clamp/4.1.0_postcss@8.4.16:
+    resolution: {integrity: sha512-ry4b1Llo/9zz+PKC+030KUnPITTJAHeOwjfAyyB60eT0AorGLdzp52s31OsPRHRf8NchkgFoG2y6fCfn1IV1Ow==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-clamp/-/postcss-clamp-4.1.0.tgz}
+    id: registry.npmmirror.com/postcss-clamp/4.1.0
+    name: postcss-clamp
+    version: 4.1.0
+    engines: {node: '>=7.6.0'}
+    peerDependencies:
+      postcss: ^8.4.6
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-color-functional-notation/4.2.4_postcss@8.4.16:
+    resolution: {integrity: sha512-2yrTAUZUab9s6CpxkxC4rVgFEVaR6/2Pipvi6qcgvnYiVqZcbDHEoBDhrXzyb7Efh2CCfHQNtcqWcIruDTIUeg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-color-functional-notation/-/postcss-color-functional-notation-4.2.4.tgz}
+    id: registry.npmmirror.com/postcss-color-functional-notation/4.2.4
+    name: postcss-color-functional-notation
+    version: 4.2.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-color-hex-alpha/8.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-color-hex-alpha/-/postcss-color-hex-alpha-8.0.4.tgz}
+    id: registry.npmmirror.com/postcss-color-hex-alpha/8.0.4
+    name: postcss-color-hex-alpha
+    version: 8.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-color-rebeccapurple/7.1.1_postcss@8.4.16:
+    resolution: {integrity: sha512-pGxkuVEInwLHgkNxUc4sdg4g3py7zUeCQ9sMfwyHAT+Ezk8a4OaaVZ8lIY5+oNqA/BXXgLyXv0+5wHP68R79hg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-color-rebeccapurple/-/postcss-color-rebeccapurple-7.1.1.tgz}
+    id: registry.npmmirror.com/postcss-color-rebeccapurple/7.1.1
+    name: postcss-color-rebeccapurple
+    version: 7.1.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-custom-media/8.0.2_postcss@8.4.16:
+    resolution: {integrity: sha512-7yi25vDAoHAkbhAzX9dHx2yc6ntS4jQvejrNcC+csQJAXjj15e7VcWfMgLqBNAbOvqi5uIa9huOVwdHbf+sKqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-custom-media/-/postcss-custom-media-8.0.2.tgz}
+    id: registry.npmmirror.com/postcss-custom-media/8.0.2
+    name: postcss-custom-media
+    version: 8.0.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.3
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-custom-properties/12.1.8_postcss@8.4.16:
+    resolution: {integrity: sha512-8rbj8kVu00RQh2fQF81oBqtduiANu4MIxhyf0HbbStgPtnFlWn0yiaYTpLHrPnJbffVY1s9apWsIoVZcc68FxA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-custom-properties/-/postcss-custom-properties-12.1.8.tgz}
+    id: registry.npmmirror.com/postcss-custom-properties/12.1.8
+    name: postcss-custom-properties
+    version: 12.1.8
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-custom-selectors/6.0.3_postcss@8.4.16:
+    resolution: {integrity: sha512-fgVkmyiWDwmD3JbpCmB45SvvlCD6z9CG6Ie6Iere22W5aHea6oWa7EM2bpnv2Fj3I94L3VbtvX9KqwSi5aFzSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-custom-selectors/-/postcss-custom-selectors-6.0.3.tgz}
+    id: registry.npmmirror.com/postcss-custom-selectors/6.0.3
+    name: postcss-custom-selectors
+    version: 6.0.3
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.3
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-dir-pseudo-class/6.0.5_postcss@8.4.16:
+    resolution: {integrity: sha512-eqn4m70P031PF7ZQIvSgy9RSJ5uI2171O/OO/zcRNYpJbvaeKFUlar1aJ7rmgiQtbm0FSPsRewjpdS0Oew7MPA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-dir-pseudo-class/-/postcss-dir-pseudo-class-6.0.5.tgz}
+    id: registry.npmmirror.com/postcss-dir-pseudo-class/6.0.5
+    name: postcss-dir-pseudo-class
+    version: 6.0.5
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-double-position-gradients/3.1.2_postcss@8.4.16:
+    resolution: {integrity: sha512-GX+FuE/uBR6eskOK+4vkXgT6pDkexLokPaz/AbJna9s5Kzp/yl488pKPjhy0obB475ovfT1Wv8ho7U/cHNaRgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-double-position-gradients/-/postcss-double-position-gradients-3.1.2.tgz}
+    id: registry.npmmirror.com/postcss-double-position-gradients/3.1.2
+    name: postcss-double-position-gradients
+    version: 3.1.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-env-function/4.0.6_postcss@8.4.16:
+    resolution: {integrity: sha512-kpA6FsLra+NqcFnL81TnsU+Z7orGtDTxcOhl6pwXeEq1yFPpRMkCDpHhrz8CFQDr/Wfm0jLiNQ1OsGGPjlqPwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-env-function/-/postcss-env-function-4.0.6.tgz}
+    id: registry.npmmirror.com/postcss-env-function/4.0.6
+    name: postcss-env-function
+    version: 4.0.6
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-focus-visible/6.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-QcKuUU/dgNsstIK6HELFRT5Y3lbrMLEOwG+A4s5cA+fx3A3y/JTq3X9LaOj3OC3ALH0XqyrgQIgey/MIZ8Wczw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-focus-visible/-/postcss-focus-visible-6.0.4.tgz}
+    id: registry.npmmirror.com/postcss-focus-visible/6.0.4
+    name: postcss-focus-visible
+    version: 6.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-focus-within/5.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-vvjDN++C0mu8jz4af5d52CB184ogg/sSxAFS+oUJQq2SuCe7T5U2iIsVJtsCp2d6R4j0jr5+q3rPkBVZkXD9fQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-focus-within/-/postcss-focus-within-5.0.4.tgz}
+    id: registry.npmmirror.com/postcss-focus-within/5.0.4
+    name: postcss-focus-within
+    version: 5.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-font-variant/5.0.0_postcss@8.4.16:
+    resolution: {integrity: sha512-1fmkBaCALD72CK2a9i468mA/+tr9/1cBxRRMXOUaZqO43oWPR5imcyPjXwuv7PXbCid4ndlP5zWhidQVVa3hmA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-font-variant/-/postcss-font-variant-5.0.0.tgz}
+    id: registry.npmmirror.com/postcss-font-variant/5.0.0
+    name: postcss-font-variant
+    version: 5.0.0
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-gap-properties/3.0.5_postcss@8.4.16:
+    resolution: {integrity: sha512-IuE6gKSdoUNcvkGIqdtjtcMtZIFyXZhmFd5RUlg97iVEvp1BZKV5ngsAjCjrVy+14uhGBQl9tzmi1Qwq4kqVOg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-gap-properties/-/postcss-gap-properties-3.0.5.tgz}
+    id: registry.npmmirror.com/postcss-gap-properties/3.0.5
+    name: postcss-gap-properties
+    version: 3.0.5
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-image-set-function/4.0.7_postcss@8.4.16:
+    resolution: {integrity: sha512-9T2r9rsvYzm5ndsBE8WgtrMlIT7VbtTfE7b3BQnudUqnBcBo7L758oc+o+pdj/dUV0l5wjwSdjeOH2DZtfv8qw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-image-set-function/-/postcss-image-set-function-4.0.7.tgz}
+    id: registry.npmmirror.com/postcss-image-set-function/4.0.7
+    name: postcss-image-set-function
+    version: 4.0.7
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-initial/4.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-0ueD7rPqX8Pn1xJIjay0AZeIuDoF+V+VvMt/uOnn+4ezUKhZM/NokDeP6DwMNyIoYByuN/94IQnt5FEkaN59xQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-initial/-/postcss-initial-4.0.1.tgz}
+    id: registry.npmmirror.com/postcss-initial/4.0.1
+    name: postcss-initial
+    version: 4.0.1
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-lab-function/4.2.1_postcss@8.4.16:
+    resolution: {integrity: sha512-xuXll4isR03CrQsmxyz92LJB2xX9n+pZJ5jE9JgcnmsCammLyKdlzrBin+25dy6wIjfhJpKBAN80gsTlCgRk2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-lab-function/-/postcss-lab-function-4.2.1.tgz}
+    id: registry.npmmirror.com/postcss-lab-function/4.2.1
+    name: postcss-lab-function
+    version: 4.2.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-logical/5.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-RHXxplCeLh9VjinvMrZONq7im4wjWGlRJAqmAVLXyZaXwfDWP73/oq4NdIp+OZwhQUMj0zjqDfM5Fj7qby+B4g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-logical/-/postcss-logical-5.0.4.tgz}
+    id: registry.npmmirror.com/postcss-logical/5.0.4
+    name: postcss-logical
+    version: 5.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-media-minmax/5.0.0_postcss@8.4.16:
+    resolution: {integrity: sha512-yDUvFf9QdFZTuCUg0g0uNSHVlJ5X1lSzDZjPSFaiCWvjgsvu8vEVxtahPrLMinIDEEGnx6cBe6iqdx5YWz08wQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-media-minmax/-/postcss-media-minmax-5.0.0.tgz}
+    id: registry.npmmirror.com/postcss-media-minmax/5.0.0
+    name: postcss-media-minmax
+    version: 5.0.0
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-nesting/10.1.10_postcss@8.4.16:
+    resolution: {integrity: sha512-lqd7LXCq0gWc0wKXtoKDru5wEUNjm3OryLVNRZ8OnW8km6fSNUuFrjEhU3nklxXE2jvd4qrox566acgh+xQt8w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-nesting/-/postcss-nesting-10.1.10.tgz}
+    id: registry.npmmirror.com/postcss-nesting/10.1.10
+    name: postcss-nesting
+    version: 10.1.10
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/selector-specificity': registry.npmmirror.com/@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-opacity-percentage/1.1.2:
+    resolution: {integrity: sha512-lyUfF7miG+yewZ8EAk9XUBIlrHyUE6fijnesuz+Mj5zrIHIEw6KcIZSOk/elVMqzLvREmXB83Zi/5QpNRYd47w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-opacity-percentage/-/postcss-opacity-percentage-1.1.2.tgz}
+    name: postcss-opacity-percentage
+    version: 1.1.2
+    engines: {node: ^12 || ^14 || >=16}
+    dev: true
+
+  registry.npmmirror.com/postcss-overflow-shorthand/3.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-otYl/ylHK8Y9bcBnPLo3foYFLL6a6Ak+3EQBPOTR7luMYCOsiVTUk1iLvNf6tVPNGXcoL9Hoz37kpfriRIFb4A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-overflow-shorthand/-/postcss-overflow-shorthand-3.0.4.tgz}
+    id: registry.npmmirror.com/postcss-overflow-shorthand/3.0.4
+    name: postcss-overflow-shorthand
+    version: 3.0.4
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-page-break/3.0.4_postcss@8.4.16:
+    resolution: {integrity: sha512-1JGu8oCjVXLa9q9rFTo4MbeeA5FMe00/9C7lN4va606Rdb+HkxXtXsmEDrIraQ11fGz/WvKWa8gMuCKkrXpTsQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-page-break/-/postcss-page-break-3.0.4.tgz}
+    id: registry.npmmirror.com/postcss-page-break/3.0.4
+    name: postcss-page-break
+    version: 3.0.4
+    peerDependencies:
+      postcss: ^8
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-place/7.0.5_postcss@8.4.16:
+    resolution: {integrity: sha512-wR8igaZROA6Z4pv0d+bvVrvGY4GVHihBCBQieXFY3kuSuMyOmEnnfFzHl/tQuqHZkfkIVBEbDvYcFfHmpSet9g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-place/-/postcss-place-7.0.5.tgz}
+    id: registry.npmmirror.com/postcss-place/7.0.5
+    name: postcss-place
+    version: 7.0.5
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-preset-env/7.7.2_postcss@8.4.16:
+    resolution: {integrity: sha512-1q0ih7EDsZmCb/FMDRvosna7Gsbdx8CvYO5hYT120hcp2ZAuOHpSzibujZ4JpIUcAC02PG6b+eftxqjTFh5BNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-preset-env/-/postcss-preset-env-7.7.2.tgz}
+    id: registry.npmmirror.com/postcss-preset-env/7.7.2
+    name: postcss-preset-env
+    version: 7.7.2
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      '@csstools/postcss-cascade-layers': registry.npmmirror.com/@csstools/postcss-cascade-layers/1.0.5_postcss@8.4.16
+      '@csstools/postcss-color-function': registry.npmmirror.com/@csstools/postcss-color-function/1.1.1_postcss@8.4.16
+      '@csstools/postcss-font-format-keywords': registry.npmmirror.com/@csstools/postcss-font-format-keywords/1.0.1_postcss@8.4.16
+      '@csstools/postcss-hwb-function': registry.npmmirror.com/@csstools/postcss-hwb-function/1.0.2_postcss@8.4.16
+      '@csstools/postcss-ic-unit': registry.npmmirror.com/@csstools/postcss-ic-unit/1.0.1_postcss@8.4.16
+      '@csstools/postcss-is-pseudo-class': registry.npmmirror.com/@csstools/postcss-is-pseudo-class/2.0.7_postcss@8.4.16
+      '@csstools/postcss-normalize-display-values': registry.npmmirror.com/@csstools/postcss-normalize-display-values/1.0.1_postcss@8.4.16
+      '@csstools/postcss-oklab-function': registry.npmmirror.com/@csstools/postcss-oklab-function/1.1.1_postcss@8.4.16
+      '@csstools/postcss-progressive-custom-properties': registry.npmmirror.com/@csstools/postcss-progressive-custom-properties/1.3.0_postcss@8.4.16
+      '@csstools/postcss-stepped-value-functions': registry.npmmirror.com/@csstools/postcss-stepped-value-functions/1.0.1_postcss@8.4.16
+      '@csstools/postcss-trigonometric-functions': registry.npmmirror.com/@csstools/postcss-trigonometric-functions/1.0.2_postcss@8.4.16
+      '@csstools/postcss-unset-value': registry.npmmirror.com/@csstools/postcss-unset-value/1.0.2_postcss@8.4.16
+      autoprefixer: registry.npmmirror.com/autoprefixer/10.4.8_postcss@8.4.16
+      browserslist: registry.npmmirror.com/browserslist/4.21.3
+      css-blank-pseudo: registry.npmmirror.com/css-blank-pseudo/3.0.3_postcss@8.4.16
+      css-has-pseudo: registry.npmmirror.com/css-has-pseudo/3.0.4_postcss@8.4.16
+      css-prefers-color-scheme: registry.npmmirror.com/css-prefers-color-scheme/6.0.3_postcss@8.4.16
+      cssdb: registry.npmmirror.com/cssdb/6.6.3
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-attribute-case-insensitive: registry.npmmirror.com/postcss-attribute-case-insensitive/5.0.2_postcss@8.4.16
+      postcss-clamp: registry.npmmirror.com/postcss-clamp/4.1.0_postcss@8.4.16
+      postcss-color-functional-notation: registry.npmmirror.com/postcss-color-functional-notation/4.2.4_postcss@8.4.16
+      postcss-color-hex-alpha: registry.npmmirror.com/postcss-color-hex-alpha/8.0.4_postcss@8.4.16
+      postcss-color-rebeccapurple: registry.npmmirror.com/postcss-color-rebeccapurple/7.1.1_postcss@8.4.16
+      postcss-custom-media: registry.npmmirror.com/postcss-custom-media/8.0.2_postcss@8.4.16
+      postcss-custom-properties: registry.npmmirror.com/postcss-custom-properties/12.1.8_postcss@8.4.16
+      postcss-custom-selectors: registry.npmmirror.com/postcss-custom-selectors/6.0.3_postcss@8.4.16
+      postcss-dir-pseudo-class: registry.npmmirror.com/postcss-dir-pseudo-class/6.0.5_postcss@8.4.16
+      postcss-double-position-gradients: registry.npmmirror.com/postcss-double-position-gradients/3.1.2_postcss@8.4.16
+      postcss-env-function: registry.npmmirror.com/postcss-env-function/4.0.6_postcss@8.4.16
+      postcss-focus-visible: registry.npmmirror.com/postcss-focus-visible/6.0.4_postcss@8.4.16
+      postcss-focus-within: registry.npmmirror.com/postcss-focus-within/5.0.4_postcss@8.4.16
+      postcss-font-variant: registry.npmmirror.com/postcss-font-variant/5.0.0_postcss@8.4.16
+      postcss-gap-properties: registry.npmmirror.com/postcss-gap-properties/3.0.5_postcss@8.4.16
+      postcss-image-set-function: registry.npmmirror.com/postcss-image-set-function/4.0.7_postcss@8.4.16
+      postcss-initial: registry.npmmirror.com/postcss-initial/4.0.1_postcss@8.4.16
+      postcss-lab-function: registry.npmmirror.com/postcss-lab-function/4.2.1_postcss@8.4.16
+      postcss-logical: registry.npmmirror.com/postcss-logical/5.0.4_postcss@8.4.16
+      postcss-media-minmax: registry.npmmirror.com/postcss-media-minmax/5.0.0_postcss@8.4.16
+      postcss-nesting: registry.npmmirror.com/postcss-nesting/10.1.10_postcss@8.4.16
+      postcss-opacity-percentage: registry.npmmirror.com/postcss-opacity-percentage/1.1.2
+      postcss-overflow-shorthand: registry.npmmirror.com/postcss-overflow-shorthand/3.0.4_postcss@8.4.16
+      postcss-page-break: registry.npmmirror.com/postcss-page-break/3.0.4_postcss@8.4.16
+      postcss-place: registry.npmmirror.com/postcss-place/7.0.5_postcss@8.4.16
+      postcss-pseudo-class-any-link: registry.npmmirror.com/postcss-pseudo-class-any-link/7.1.6_postcss@8.4.16
+      postcss-replace-overflow-wrap: registry.npmmirror.com/postcss-replace-overflow-wrap/4.0.0_postcss@8.4.16
+      postcss-selector-not: registry.npmmirror.com/postcss-selector-not/6.0.1_postcss@8.4.16
+      postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss-pseudo-class-any-link/7.1.6_postcss@8.4.16:
+    resolution: {integrity: sha512-9sCtZkO6f/5ML9WcTLcIyV1yz9D1rf0tWc+ulKcvV30s0iZKS/ONyETvoWsr6vnrmW+X+KmuK3gV/w5EWnT37w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-pseudo-class-any-link/-/postcss-pseudo-class-any-link-7.1.6.tgz}
+    id: registry.npmmirror.com/postcss-pseudo-class-any-link/7.1.6
+    name: postcss-pseudo-class-any-link
+    version: 7.1.6
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-replace-overflow-wrap/4.0.0_postcss@8.4.16:
+    resolution: {integrity: sha512-KmF7SBPphT4gPPcKZc7aDkweHiKEEO8cla/GjcBK+ckKxiZslIu3C4GCRW3DNfL0o7yW7kMQu9xlZ1kXRXLXtw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-replace-overflow-wrap/-/postcss-replace-overflow-wrap-4.0.0.tgz}
+    id: registry.npmmirror.com/postcss-replace-overflow-wrap/4.0.0
+    name: postcss-replace-overflow-wrap
+    version: 4.0.0
+    peerDependencies:
+      postcss: ^8.0.3
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+    dev: true
+
+  registry.npmmirror.com/postcss-selector-not/6.0.1_postcss@8.4.16:
+    resolution: {integrity: sha512-1i9affjAe9xu/y9uqWH+tD4r6/hDaXJruk8xn2x1vzxC2U3J3LKO3zJW4CyxlNhA56pADJ/djpEwpH1RClI2rQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-selector-not/-/postcss-selector-not-6.0.1.tgz}
+    id: registry.npmmirror.com/postcss-selector-not/6.0.1
+    name: postcss-selector-not
+    version: 6.0.1
+    engines: {node: ^12 || ^14 || >=16}
+    peerDependencies:
+      postcss: ^8.2
+    dependencies:
+      postcss: registry.npmmirror.com/postcss/8.4.16
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.10
+    dev: true
+
+  registry.npmmirror.com/postcss-selector-parser/6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz}
+    name: postcss-selector-parser
+    version: 6.0.10
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: registry.npmmirror.com/cssesc/3.0.0
+      util-deprecate: registry.npmmirror.com/util-deprecate/1.0.2
+    dev: true
+
+  registry.npmmirror.com/postcss-value-parser/4.2.0:
+    resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz}
+    name: postcss-value-parser
+    version: 4.2.0
+    dev: true
+
+  registry.npmmirror.com/postcss/8.4.16:
+    resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.16.tgz}
+    name: postcss
+    version: 8.4.16
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: registry.npmmirror.com/nanoid/3.3.4
+      picocolors: registry.npmmirror.com/picocolors/1.0.0
+      source-map-js: registry.npmmirror.com/source-map-js/1.0.2
+    dev: true
+
+  registry.npmmirror.com/source-map-js/1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz}
+    name: source-map-js
+    version: 1.0.2
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  registry.npmmirror.com/update-browserslist-db/1.0.5_browserslist@4.21.3:
+    resolution: {integrity: sha512-dteFFpCyvuDdr9S/ff1ISkKt/9YZxKjI9WlRR99c180GaztJtRa/fn18FdxGVKVsnPY7/a/FDN68mcvUmP4U7Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/update-browserslist-db/-/update-browserslist-db-1.0.5.tgz}
+    id: registry.npmmirror.com/update-browserslist-db/1.0.5
+    name: update-browserslist-db
+    version: 1.0.5
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: registry.npmmirror.com/browserslist/4.21.3
+      escalade: registry.npmmirror.com/escalade/3.1.1
+      picocolors: registry.npmmirror.com/picocolors/1.0.0
+    dev: true
+
+  registry.npmmirror.com/util-deprecate/1.0.2:
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz}
+    name: util-deprecate
+    version: 1.0.2
     dev: true
